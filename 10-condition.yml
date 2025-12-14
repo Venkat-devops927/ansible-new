@@ -13,4 +13,4 @@
   - name: print this if greater then 10
     ansible.builtin.debug:
       msg: "given number is {{ number }} is greter then 10"
-    when: number | int < 10
+    when: number | int > 10
