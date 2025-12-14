@@ -1,7 +1,6 @@
  - name: print vars from prompts
    hosts: web
    become: yes
-   private: false
    vars_prompt:
    - name: COURSE
      prompt: plese enter the course name
