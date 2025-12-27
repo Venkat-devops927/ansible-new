@@ -12,5 +12,5 @@
     ansible.builtin.debug:
       msg: "this is from play-02 ans task-01"
 
-ansible-init
+
       
