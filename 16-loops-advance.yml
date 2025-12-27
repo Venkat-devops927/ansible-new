@@ -11,8 +11,8 @@
       - { name: 'nginx' ,state: 'present'}
       - { name: 'postfix' ,state: 'present'}
       - { name: 'httpd' ,state: 'present'}
-   - name: run nginx
-     ansible.builtin.service:
-      name: nginx
-      state: started
-      enabled: true
+  #  - name: run nginx
+  #    ansible.builtin.service:
+  #     name: nginx
+  #     state: started
+  #     enabled: true
