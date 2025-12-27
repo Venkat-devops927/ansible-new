@@ -1,5 +1,5 @@
 - name: install nginx
-  host: web
+  hosts: web
   become: yes
   tasks:
    - name: print the stats
@@ -11,7 +11,7 @@
       name: nginx
       state: present
      when: ansible_os_family == "RedHat"
-     
+
    - name: install nginx if debian
      ansible.builtin.apt:
       name: nginx
