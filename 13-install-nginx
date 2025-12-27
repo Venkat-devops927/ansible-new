@@ -10,6 +10,7 @@
      ansible.builtin.dnf:
       name: nginx
       state: present
+      enabled: true
      when: ansible_os_family == "RedHat"
 
    - name: install nginx if debian
