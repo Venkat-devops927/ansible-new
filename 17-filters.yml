@@ -26,5 +26,5 @@
     vars:
       myip: 192.168.1.1
     ansible.builtin.debug:
-        msg: "{{ myip | ansible.utils }}"
+        msg: "{{ myip | ansible.utils.ipv4}}"
 
