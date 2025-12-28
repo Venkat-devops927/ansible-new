@@ -7,3 +7,6 @@
 
   - name: excute the comand
     ansible.builtin.command: ls -ltr
+
+  - name: check the process
+    ansible.builtin.shell: ps -ef | grep -i ssh
